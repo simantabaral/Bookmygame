@@ -1,0 +1,96 @@
+#loginbox{
+    background:#fff;
+    width:50%;
+    height:auto;
+    margin-left:18rem;
+    margin-top:5rem;
+    justify-content: center;
+    text-align:center;
+    justify-items: center;
+    border-radius:5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+#loginbox img{
+    height:200px;
+    margin:2rem;
+}
+input[type="password"],
+input[type="text"],
+input[type="email"]{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  margin-left:14rem;
+  /* margin-left:10rem; */
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+/* button */
+.button-login{
+    /* display: block; */
+    width: 40%;
+    color:#fff;
+    border: none;
+    background-color: #4CAF50;
+    padding: 14px 28px;
+    font-size: 1.5rem;;
+    cursor: pointer;
+    margin-top:-1rem;
+    margin-left:3rem;
+    text-align: center;
+  }
+  .button-admin{
+        width: 40%;
+        color:#fff;
+        border: none;
+        background-color: #4CAF50;
+        padding: 14px 28px;
+        font-size: 1.5rem;;
+        cursor: pointer;
+        margin-top:0rem;
+        margin-bottom: 1rem;
+        margin-left:3rem;
+        text-align: center;
+      }
+  .login{
+    background: url('../images/background.png') no-repeat;
+}
+.agree{
+    color:#3e8e41;
+    padding-bottom:1rem;
+    padding-top: 0rem;
+}
+@media(max-width:768px){
+    #loginbox{
+        margin:0px;
+        width:100%;
+        border-radius: 6%;
+    }
+    input[type="password"],
+    input[type="text"],
+    input[type="email"]{
+    margin-left:3rem;;
+    }
+    #loginbox img{
+        height:150px;
+    }
+    .button-login{
+        width:78%;
+        margin-left:0rem;
+    }
+}

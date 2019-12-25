@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background:url("../images/anjal.png") ; background-repeat : no-repeat;
+}
+.container {
+  padding: 0 20px;
+  
+}
+
+.sub-container {
+  max-width: 500px;
+  width: 100%;
+  height: 350px;
+  margin: 150px auto 0;
+  display: flex;
+  background: #fff;
+  /* box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.125); */
+  /* box-shadow: 5px 5px 5px grey; */
+}
+
+.sub-container .banner-img {
+  width: 220px;
+  height: 100%;
+  /* border-right:2px solid #4CAF50; */
+}
+
+.sub-container .banner-img img {
+  width: 100%;
+  height: 100%;
+  margin-left:1rem;
+}
+
+.sub-container .login-form {
+  width: 280px;
+  height: 100%;
+  text-align: center;
+  padding: 40px 35px 0;
+  position: relative;
+}
+
+.sub-container .login-form .title {
+  color:#4CAF50;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.login-form .label {
+  color: #524a4a;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.login-form .input {
+  margin: 5px 0 15px;
+  width: 100%;
+  padding: 17px;
+  border:none;
+}
+
+.login-form .forgot a {
+  color:#4CAF50;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+input[type="email"]:focus,
+input[type="password"]:focus{
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+/* .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: #4CAF50;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+} */
+.button-login{
+  display: block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+}
+.button-login:hover {background-color: #3e8e41}
+      
+.button-login:active {
+  background-color: #3e8e41;
+  /* box-shadow: 0 5px #666; */
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 500px) {
+  .sub-container {
+    flex-direction: column;
+    max-width: 300px;
+    height: auto;
+    margin-top: 50px;
+  }
+  .sub-container .banner-img {
+    width: 50%;
+    height: 200px;
+    margin-left:3rem;
+  }
+  .sub-container .login-form {
+    width: 100%;
+    padding: 20px 35px 0;
+  }
+  .sub-container .login-form .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .login-form .input {
+    margin-bottom: 10px;
+  }
+
+  .login-form .forgot {
+    margin-bottom: 55px;
+  }
+  .btn {
+    margin-top: 20px;
+    padding: 10px;
+  }
+}
